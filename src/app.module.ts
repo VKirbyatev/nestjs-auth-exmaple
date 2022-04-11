@@ -5,6 +5,7 @@ import { AuthModule } from 'unistory-nestjs-auth';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { Payload } from './test-filtes/payload';
 import { UserEntity } from './test-filtes/UserEntity.entity';
+import { LoginValidationDto } from './test-filtes/login-validation.dto';
 
 const pgConfig: TypeOrmModuleOptions = {
   type: 'postgres',
@@ -50,6 +51,9 @@ const tokensConfig = {
 
       // // By default uses this properties
       tokens: tokensConfig,
+
+      // // By defaults has @IsString validation occurs both login and password
+      loginCredentials: LoginValidationDto,
     }),
   ],
   controllers: [AppController],
