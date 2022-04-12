@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AuthModule } from 'unistory-nestjs-auth';
+import { AuthModule } from '@unistory/nestjs-auth';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { Payload } from './test-filtes/payload';
 import { UserEntity } from './test-filtes/UserEntity.entity';

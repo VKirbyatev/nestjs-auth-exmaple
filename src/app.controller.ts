@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { AuthGuard, RolesGuard } from 'unistory-nestjs-auth';
+import { AuthGuard, RolesGuard } from '@unistory/nestjs-auth';
 import { AppService } from './app.service';
 
 @Controller()

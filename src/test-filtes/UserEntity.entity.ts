@@ -2,8 +2,8 @@ import { BaseEntity, Column, Entity, PrimaryColumn } from 'typeorm';
 import {
   Login,
   Password,
-} from 'unistory-nestjs-auth/lib/misc/decorators/credentials.decorator';
-import { User } from 'unistory-nestjs-auth/lib/misc/decorators/user.decorator';
+} from '@unistory/nestjs-auth/lib/misc/decorators/credentials.decorator';
+import { User } from '@unistory/nestjs-auth/lib/misc/decorators/user.decorator';
 
 // Require @User, @Login and @Password decorators
 // By default package supply login endpoints which always use LOGIN and PASSWORD fields
