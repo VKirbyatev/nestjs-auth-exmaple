@@ -42,6 +42,8 @@ const tokensConfig = {
       // Required field
       databaseConfig: {
         typeORMconfig: pgConfig,
+
+        userEntity: UserEntity,
       },
 
       // Not required fields
